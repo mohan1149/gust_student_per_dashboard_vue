@@ -1,6 +1,12 @@
 <script>
 import { RouterLink, RouterView } from 'vue-router';
 export default {
+    methods: {
+        logout() {
+            localStorage.removeItem('token');
+            window.location.assign('/');
+        }
+    },
     mounted() {
         // Access the current pathname when the component is mounted
         console.log('Current Path:', this.$route.path);
@@ -12,7 +18,7 @@ export default {
         <nav>
             <ul>
                 <li>
-                    <RouterLink to="/" >Home</RouterLink>
+                    <RouterLink to="/">Home</RouterLink>
                 </li>
                 <li>
                     <a href="https://www.gust.edu.kw/" target="_blank" rel="noopener noreferrer">About Us</a>
@@ -27,8 +33,9 @@ export default {
                     <RouterLink to="/import">Import Data</RouterLink>
                 </li>
                 <li>
-                    <RouterLink to="/logout">Logout</RouterLink>
+                    <a href="" v-on:click="logout">Logout</a>
                 </li>
+             
             </ul>
         </nav>
     </div>
