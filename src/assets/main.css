@@ -1,0 +1,79 @@
+@import './base.css';
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+#app {
+  width: 100%;
+}
+.login{
+  display: flex;
+  justify-content: center;
+}
+.sidemenu{
+  background-color: #0ea5e9;
+  height: 100vh;
+  padding-top: 3rem;
+}
+
+.sidemenu ul li a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #FFF;
+  font-weight: bold;
+  padding-left: 1rem;
+}
+.sidemenu ul li{
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.sidemenu ul {
+  padding-left: 0px;
+}
+.router-link-exact-active{
+  background-color:#E6E6E6;
+  padding: 1rem;
+  color: #000 !important;
+  display: inline-block;
+  width: 95%;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+.app-content{
+  height: 100vh;
+  overflow: scroll;
+}
+.app-haeder{
+  position: fixed;
+  width: 100%;
+}
+.main-content{
+  margin-top: 5rem !important;
+  margin-left: 10px;
+}
+
+.gender-per canvas{
+  height: 350px !important;
+}
+.bg-blue{
+  background-color: #0EA5E9;
+  color: #FFF;
+}
+.bg-pink{
+  background-color: #F87979;
+  color: #FFFF;
+}
+.bg-indigo{
+  background-color: indigo;
+  color: #FFFF;
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+ 
+}
